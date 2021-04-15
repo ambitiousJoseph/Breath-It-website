@@ -1,0 +1,109 @@
+
+        .top{
+            background-image: url('../images/bg.jpg');
+            background-position: center;
+            background-size: cover;
+            min-height: 500px; 
+            width: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .about-us{
+            background-image: url(../images/design.gif);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            background-attachment: fixed;
+            color: white;
+            padding-top: 50px;
+            background-repeat: no-repeat;
+        }
+        .top span{
+            color: white;
+            font-size: 40px;
+            text-decoration: underline 2px;
+        }
+        .text{
+            min-width: 200px;
+            width: fit-content;
+            margin: 0 auto;
+            height: 40px;
+            border-radius: 25px;
+            text-align: left;            
+            padding: 6px;
+            font-size: 20px;
+            margin-bottom: 12px;
+            border-left: 2px white solid;
+            border-bottom: 1px white solid;
+        }
+        .text:hover{
+            color: rgb(1, 24, 34);
+            background-color: rgba(219, 215, 215, .6);
+            border-left: 2px rgb(163, 161, 161) solid;
+            border-bottom: 1px rgb(189, 185, 185) solid;
+            animation-name: fades;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+        }
+        .services-list a{
+            color: white;
+            text-decoration: none;
+        }
+        .jumbotron{
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+        .card:hover{
+            animation-name: cards;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+            background-color: rgba(0,0,0,.9);
+            color: rgb(209, 208, 208);
+        }
+
+
+        /*  */
+        @keyframes fades {
+            0%{                
+                opacity: 0;
+            }
+            25%{                
+                opacity: .26;
+            }
+            50%{
+                opacity: .5;
+
+            }
+            75%{
+                opacity: .75;
+
+            }
+            100%{
+                opacity: .9;
+
+            }
+        }
+
+        /* Animation effects for services cards */
+        @keyframes cards {
+            0%{                
+                background-color: rgba(0,0,0,.0);
+                color: #000;
+            }
+            25%{               
+                background-color: rgba(0,0,0,.25);
+                color: rgb(121, 118, 118);
+            }
+            50%{
+                background-color: rgba(0,0,0,.5);
+                color: rgb(187, 184, 184);
+            }
+            75%{
+                background-color: rgba(0,0,0,.75);
+                color: rgb(221, 219, 219);
+            }
+            100%{
+                background-color: rgba(0,0,0,.9);
+                color: rgb(209, 208, 208);
+            }
+        }
